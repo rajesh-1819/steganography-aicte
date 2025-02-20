@@ -2,7 +2,7 @@ import cv2
 import os
 
 # Load the image
-img = cv2.imread("moon.jpg")  # Use a lossless PNG image for accuracy
+img = cv2.imread("moon.jpg") 
 
 # Get the secret message and passcode
 msg = input("Enter secret message: ")
@@ -33,9 +33,9 @@ for char in msg:
             m = 0
             n += 1
 
-# Save the encrypted image as PNG (lossless format)
+# Save the encrypted image as PNG 
 cv2.imwrite("encryptedImage.png", img)
 print("Encryption completed! Encrypted image saved as 'encryptedImage.png'.")
 
-# Open the encrypted image (Windows-specific)
+# Open the encrypted image
 os.system("start encryptedImage.png")
